@@ -39,6 +39,8 @@ int main(int argc, char ** argv) try
     al_set_target_bitmap(al_get_backbuffer(display.get()));
     al_clear_to_color(al_map_rgb(0, 0, 0));
 
+    ALLEGRO_COLOR brown_level2 = assMan.createColor("squirrel-brown", 114, 63, 32);
+
     while(true)
     {
         ALLEGRO_EVENT event;
@@ -69,7 +71,6 @@ int main(int argc, char ** argv) try
         {
             try
             {
-                ALLEGRO_COLOR brown_level2 = assMan.createColor("squirrel-brown", 114, 63, 32);
                 ALLEGRO_COLOR brown_level1 = assMan.getColor("squirrel-brown");
                 ALLEGRO_COLOR brown_level0 = al_map_rgb(114, 63, 32);
 
